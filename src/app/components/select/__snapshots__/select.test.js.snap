@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Select should render correctly 1`] = `
+<div
+  className=""
+>
+  <label
+    htmlFor="name"
+  >
+    <span>
+      label
+      :
+    </span>
+    <span>
+      <select
+        data-selector=""
+        disabled={false}
+        name="name"
+      >
+        <option
+          key=""
+          value=""
+        >
+          Select
+        </option>
+        <option
+          key="mr"
+          value="mr"
+        >
+          Mr.
+        </option>
+        <option
+          key="ms"
+          value="ms"
+        >
+          Ms.
+        </option>
+        <option
+          key="sir"
+          value="sir"
+        >
+          Sir
+        </option>
+        <option
+          key="mrs"
+          value="mrs"
+        >
+          Mrs.
+        </option>
+        <option
+          key="miss"
+          value="miss"
+        >
+          Miss.
+        </option>
+        <option
+          key="dr"
+          value="dr"
+        >
+          Dr.
+        </option>
+      </select>
+      <Icon
+        name="arrowDown"
+        size={24}
+        style={null}
+      />
+    </span>
+  </label>
+</div>
+`;

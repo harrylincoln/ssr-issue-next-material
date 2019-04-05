@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function OnLoadEvent() {
+            if (window.location.hash.length > 1) {
+                var d = window.location.hash;
+                if (d.indexOf('#', 0) == 0) {
+                    d = d.substr(1, d.length - 1);
+                }
+                parent.parent.setQSSBatchId(d);
+            }
+        }
+    </script>
+</head>
+<body OnLoad="OnLoadEvent();">
+</body>
+</html>

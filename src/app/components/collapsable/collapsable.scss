@@ -1,0 +1,60 @@
+.collapsable {
+
+  h3 {
+    margin: 0;
+  }
+  p {
+    padding: 0 0 .5rem;
+    margin: 0;
+  }
+
+  header {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+
+    button {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  footer {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .active-content,
+  .complete-content {
+    display: block;
+    padding: 20px;
+  }
+
+  .complete-content {
+    border-bottom: 1px solid #ccc;
+  }
+
+  &.isClosed {
+    .active-content,
+    .complete-content,
+    header button,
+    footer {
+      display: none;
+    }
+  }
+  &.isActive {
+    background: #eee;
+
+    .complete-content,
+    header button {
+      display: none;
+    }
+  }
+  &.isComplete {
+    .active-content,
+    footer {
+      display: none;
+    }
+  }
+}

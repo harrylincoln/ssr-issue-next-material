@@ -1,0 +1,19 @@
+// https://sketch.cloud/s/KG9xn/eKpe9Wa
+
+// Used in grid
+$mq-s: 300px;
+$mq-m: 600px;
+$mq-l: 976px;
+$mq-xl: 1312px;
+
+// $mq-s: 22.5rem;
+// $mq-m: 37.5rem;
+// $mq-l: 61rem;
+// $mq-xl: 82rem;
+
+$breakpoints: (
+  's':  $mq-s,
+  'm': $mq-m,
+  'l':  $mq-l,
+  'xl':  $mq-xl
+) !default;

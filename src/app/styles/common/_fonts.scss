@@ -1,0 +1,39 @@
+@import '../mixins/font-face';
+
+$path-fonts: '/static/fonts';
+
+// EconSans OS Primary
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-li', 300, normal, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-li-it', 300, italic, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-rg', 400, normal, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-it', 400, italic, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-md', 500, normal, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-md-it', 500, italic, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-bd', 700, normal, woff woff2);
+@include font-face(EconSansOS, '#{$path-fonts}/econsans-primary-subset-bd-it', 700, italic, woff woff2);
+
+// EconSans OS Secondary
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-li', 300, normal, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-li-it', 300, italic, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-rg', 400, normal, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-it', 400, italic, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-md', 500, normal, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-md-it', 500, italic, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-bd', 700, normal, woff woff2);
+@include font-face(EconSansOSSec, '#{$path-fonts}/econsans-secondary-subset-bd-it', 700, italic, woff woff2);
+
+// Milo TE Primary
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-rg', 400, normal, woff woff2);
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-it', 400, italic, woff woff2);
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-md', 500, normal, woff woff2);
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-md-it', 500, italic, woff woff2);
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-bd', 700, normal, woff woff2);
+@include font-face(MiloTE, '#{$path-fonts}/milo-primary-subset-bd-it', 700, italic, woff woff2);
+
+// Milo TE Secondary
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-rg', 400, normal, woff woff2);
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-it', 400, italic, woff woff2);
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-md', 500, normal, woff woff2);
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-md-it', 500, italic, woff woff2);
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-bd', 700, normal, woff woff2);
+@include font-face(MiloTESec, '#{$path-fonts}/milo-secondary-subset-bd-it', 700, italic, woff woff2);

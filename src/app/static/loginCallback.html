@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Auth0 Callback Frame</title>
+        <script type="text/javascript">
+            function OnLoadEvent() {
+                window.parent.parent.postMessage(window.location.hash, window.parent.parent.location.href);
+            }
+        </script>
+    </head>
+    <body onLoad="OnLoadEvent();">
+    </body>
+</html> 

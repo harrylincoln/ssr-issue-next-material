@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput should render correctly 1`] = `
+<div
+  className=""
+>
+  <label
+    htmlFor="name"
+  >
+    <span>
+      label
+    </span>
+    <input
+      autoComplete={null}
+      data-selector=""
+      disabled={false}
+      readOnly={false}
+      type="text"
+    />
+  </label>
+</div>
+`;

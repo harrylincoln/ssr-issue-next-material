@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Auth0 Login Frame</title>
+        <script src="https://cdn.auth0.com/js/auth0/9.10/auth0.min.js"></script>
+        <script type="text/javascript">
+
+            async function OnLoadEvent() {
+                // console.log('LOGIN: iframe loaded login');
+            }
+            function displayMessage (evt) {
+                // console.log('LOGIN: displayMessage', evt.data);
+                const username = evt.data.username;
+                const password = evt.data.password;
+                const type = 'iframeCallback';
+                auth0Login(username, password, evt)
+                .then(res => {
+                    // console.log('displayMessage: res', res);
+                    window.parent.postMessage(Object.assign(res, {type}), window.parent.parent.location.href)
+                })
+                .catch(e => {
+                    // console.log('displayMessage: error', e);
+                    window.parent.postMessage(Object.assign({error: e}, {type}), window.parent.parent.location.href);
+                });
+            }
+
+            async function auth0Login(username, password, evt) {
+                const {
+                    domain,
+                    clientID,
+                    responseType,
+                    connection,
+                    callbackUrl} = evt.data.config;
+
+                const webAuth = new auth0.WebAuth({
+                    domain,
+                    clientID,
+                    responseType,
+                    connection,
+                    callbackUrl,
+                });
+
+                return new Promise((resolve, reject) => {
+                    webAuth.login(
+                        {
+                            redirectUri: callbackUrl,
+                            username,
+                            password,
+                            realm: 'Drupal',
+                        },
+                        (res) => {
+                            if(res.error) reject(res.error); // bubbles to catch of auth0Login() call
+                            resolve(res);
+                        },
+                    )
+                });
+            }
+            if (window.addEventListener) {
+                // console.log('if window event');
+                window.addEventListener('message', displayMessage);
+            } else {
+                // console.log('if not window event');
+                window.parent.attachEvent("onmessage", displayMessage);
+            }
+        </script>
+    </head>
+    <body onLoad="OnLoadEvent();">
+    </body>
+</html>

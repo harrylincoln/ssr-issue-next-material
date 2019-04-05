@@ -1,0 +1,10 @@
+node_modules
+.dist
+.next
+src/.next
+coverage
+.DS_Store
+/bundles
+selenium-standalone.txt
+test/reports/
+errorShots

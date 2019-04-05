@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioButton should render correctly 1`] = `
+".btnRadio-test {
+  width: 100%;
+  color: #383E42;
+  cursor: pointer;
+  border: 1px solid rgba(62,81,181,0);
+  display: block;
+  padding: 1rem 15px;
+  position: relative;
+  box-sizing: border-box;
+  background: #818ED4;
+  margin-bottom: .75rem;
+}
+.btnRadio-test:focus {
+  outline: none;
+}
+.btnRadio-test:hover {
+  background: #6E7ECD;
+}
+.btnRadio_selected-test {
+  fill: #3E51B5;
+  color: #3E51B5;
+  background: white;
+}
+.btnRadio_selected-test:hover {
+  background: white;
+}"
+`;
+
+exports[`RadioButton should render correctly 2`] = `
+Array [
+  <WithStyles(RadioButton)
+    _renderid="rendered-component"
+    text="test title"
+  >
+    <RadioButton
+      _renderid="rendered-component"
+      classes={
+        Object {
+          "btnRadio": "btnRadio-test",
+          "btnRadio_selected": "btnRadio_selected-test",
+        }
+      }
+      id=""
+      onClick={[Function]}
+      selected={false}
+      text="test title"
+    >
+      <button
+        className="btnRadio-test"
+        id=""
+        key=""
+        onClick={[Function]}
+        type="button"
+      >
+        test title
+      </button>
+    </RadioButton>
+  </WithStyles(RadioButton)>,
+  <RadioButton
+    _renderid="rendered-component"
+    classes={
+      Object {
+        "btnRadio": "btnRadio-test",
+        "btnRadio_selected": "btnRadio_selected-test",
+      }
+    }
+    id=""
+    onClick={[Function]}
+    selected={false}
+    text="test title"
+  >
+    <button
+      className="btnRadio-test"
+      id=""
+      key=""
+      onClick={[Function]}
+      type="button"
+    >
+      test title
+    </button>
+  </RadioButton>,
+]
+`;

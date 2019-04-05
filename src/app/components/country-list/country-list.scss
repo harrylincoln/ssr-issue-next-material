@@ -1,0 +1,54 @@
+@import '../../styles/rules';
+
+.selectCountry {
+  font-size: 1.4rem;
+
+  &.hasFocus {
+    border-radius: 4px;
+    box-shadow: 0 0 0 4px $color-kiev, 0 0 0 6px #E2198B;
+    outline: none;
+  }
+
+  .title {
+    font-weight: 300;
+    position: relative;
+    color: $color-london;
+    padding: 0 10px 0 0;
+    display: none;
+  }
+  .select {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    opacity: 0;
+
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(56,62,66,0);
+    height: 2em;
+
+    option {
+      background-color: #F2F2F2;
+      color: #121212;
+      white-space: nowrap;
+    }
+  }
+  .placeholder {
+    font-weight: 300;
+    color: $color-thimphu;
+  }
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    fill: $color-thimphu;
+  }
+}
+
+@include respond-to(m) {
+  .selectCountry {
+    .title {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+".button-test {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  user-select: none;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .4rem;
+  background-color: #3E51B5;
+}
+.button-test:hover {
+  background: #0F287F;
+}
+.button-test:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #E2198B;
+  border-radius: 4px;
+  background-color: #3E51B5;
+}
+.button-test:disabled {
+  color: #121212;
+  cursor: auto;
+  background: #F2F2F2;
+}
+.button-test svg {
+  margin: 0 0.8rem 0 0;
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.small-test {
+  padding: .4rem 1.8rem;
+}
+.secondary-test {
+  color: #3E51B5;
+  padding: 0.5rem 1rem;
+  background: #DADADA;
+  border-color: #595959;
+}
+.secondary-test:hover {
+  color: white;
+  background-color: #3E51B5;
+}
+.tertiary-test {
+  color: #3E51B5;
+  background: rgba(62,81,181, .05);
+  border-color: rgba(62,81,181, .25);
+}
+.tertiary-test:hover {
+  color: white;
+  background: rgba(62,81,181, .75);
+}
+.tertiary-test:focus {
+  color: white;
+  background: rgba(62,81,181, .75);
+}
+.light-test {
+  color: #FFFFFF;
+  background: rgba(255,255,255, .05);
+  border-color: rgba(255,255,255, .25);
+}
+.light-test:hover {
+  color: inherit;
+  background: rgba(255,255,255, .75);
+}
+.edit-test {
+  color: #3E51B5;
+  padding: 0.5rem 1rem;
+  background-color: white;
+}
+.edit-test:before {
+  width: 25px;
+  height: 13px;
+  display: inline-block;
+  content: '';
+  background-size: 26px 13px;
+  background-image: url('/static/edit.svg');
+}
+.edit-test:hover {
+  color: white;
+}
+.edit-test:hover:before {
+  background-image: url('/static/edit-white.svg');
+}
+.full-test {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.selected-test {
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3.2rem;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  user-select: none;
+  font-weight: 500;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .4rem;
+  background-color: #E3120B;
+}
+.selected-test:hover {
+  background-color: #E3120B;
+}
+.selected-test:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #E2198B;
+  border-radius: 4px;
+  background-color: #E3120B;
+}
+.full_width_bg-test {
+  margin: -12px 0;
+  padding: 12px;
+  background: #E3120B;
+}
+.dark-test {
+  color: #FFFFFF;
+  border-color: #383E42;
+  background-color: #383E42;
+}
+.dark-test:hover {
+  background-color: #121212;
+}
+.dark-test:focus {
+  border-color: #16C9B3;
+  background-color: #121212;
+}
+.dark-test:active {
+  border-color: #16C9B3;
+  background-color: #121212;
+}"
+`;
+
+exports[`Button should render correctly 2`] = `
+Array [
+  <WithStyles(Button)
+    _renderid="rendered-component"
+  >
+    <Button
+      _renderid="rendered-component"
+      as={null}
+      classes={
+        Object {
+          "button": "button-test",
+          "dark": "dark-test",
+          "edit": "edit-test",
+          "full": "full-test",
+          "full_width_bg": "full_width_bg-test",
+          "light": "light-test",
+          "secondary": "secondary-test",
+          "selected": "selected-test",
+          "small": "small-test",
+          "tertiary": "tertiary-test",
+        }
+      }
+      dark={false}
+      disabled={false}
+      full={false}
+      id={null}
+      light={false}
+      onClick={null}
+      prefetch={false}
+      route={null}
+      secondary={false}
+      selected={false}
+      small={false}
+      tabIndex={null}
+      tertiary={false}
+      text=""
+      type={null}
+      url={null}
+    >
+      <button
+        _renderid="rendered-component"
+        className="button-test"
+        disabled={false}
+        id={null}
+        tabIndex={null}
+        type={null}
+      >
+        Test
+      </button>
+    </Button>
+  </WithStyles(Button)>,
+  <Button
+    _renderid="rendered-component"
+    as={null}
+    classes={
+      Object {
+        "button": "button-test",
+        "dark": "dark-test",
+        "edit": "edit-test",
+        "full": "full-test",
+        "full_width_bg": "full_width_bg-test",
+        "light": "light-test",
+        "secondary": "secondary-test",
+        "selected": "selected-test",
+        "small": "small-test",
+        "tertiary": "tertiary-test",
+      }
+    }
+    dark={false}
+    disabled={false}
+    full={false}
+    id={null}
+    light={false}
+    onClick={null}
+    prefetch={false}
+    route={null}
+    secondary={false}
+    selected={false}
+    small={false}
+    tabIndex={null}
+    tertiary={false}
+    text=""
+    type={null}
+    url={null}
+  >
+    <button
+      _renderid="rendered-component"
+      className="button-test"
+      disabled={false}
+      id={null}
+      tabIndex={null}
+      type={null}
+    >
+      Test
+    </button>
+  </Button>,
+  <button
+    _renderid="rendered-component"
+    className="button-test"
+    disabled={false}
+    id={null}
+    tabIndex={null}
+    type={null}
+  >
+    Test
+  </button>,
+]
+`;

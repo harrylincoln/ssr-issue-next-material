@@ -1,0 +1,46 @@
+@mixin type-form-label() {
+  color: $color-beijing;
+  letter-spacing: .0256578451em;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin type-form-msg() {
+  letter-spacing: .0256578451em;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+
+
+@mixin formItem($name:"Item") {
+  .form#{$name} {
+    @include clearfix;
+    margin: 0 auto 10px;
+    text-align: left;
+  }
+
+  .label {
+    @include type-form-label;
+    display: block;
+    margin-bottom: 6px;    
+  }
+
+  .message {
+      @include type-form-msg;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;    
+      
+      > svg {
+          margin-right: 8px;
+      }
+  }
+
+  .error {
+    .label,
+    .message {
+        color: $color-error;
+    }
+  }
+}
